@@ -1,12 +1,14 @@
 # Android / Gradle
+# Sin barra inicial: cada reto vive en talleres|proyecto/reto-NN/, asi que
+# estos patrones tienen que matchear a cualquier profundidad, no solo raiz.
 *.iml
 .gradle/
-/local.properties
+local.properties
 .idea/
-/build/
+build/
 *.apk
 *.aab
-/captures
+captures/
 .externalNativeBuild
 .cxx
 .DS_Store

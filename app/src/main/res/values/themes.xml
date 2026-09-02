@@ -2,7 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Reto0" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/wiki_text</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/wiki_text</item>
     </style>
 
     <style name="Theme.Reto0" parent="Base.Theme.Reto0" />

@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name">Reto 0</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuración</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Primera parte</string>
+    <string name="second_fragment_label">Segunda Parte</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
 
-    <string name="lorem_ipsum">Hola Mundo</string>
+    <string name="lorem_ipsum">Hola mundo</string>
+    <string name="wiki_subtitle"> Texto extraídop de Wikipedia</string>
+    <string name="wiki_content">Un programa «Hola mundo» es aquel que imprime el texto «¡Hola, mundo!» en un dispositivo de visualización, en la mayoría de los casos una pantalla de monitor. Este programa suele ser el primero que se estudia al aprender un nuevo lenguaje de programación.</string>
+    <string name="wiki_section_history">Historia</string>
+    <string name="wiki_history_content">La primera vez que se usó el término fue en un seminario técnico de los laboratorios Bell en 1972, por Brian Kernighan, quien lo incluyó en el libro «A Tutorial Introduction to the Language B».</string>
+    <string name="wiki_more_info">Leer más en Wikipedia</string>
+    <string name="wiki_section_see_also">Véase también</string>
+    <string name="wiki_see_also_content">Para más información sobre los primeros pasos en programación, puedes consultar otros artículos relacionados en la enciclopedia libre.</string>
+    <string name="wiki_go_back">Volver al artículo</string>
 </resources>

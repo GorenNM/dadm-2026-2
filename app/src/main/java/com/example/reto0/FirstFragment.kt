@@ -1,10 +1,12 @@
 package com.example.reto0
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import com.example.reto0.databinding.FragmentFirstBinding
 
 /**
@@ -30,6 +32,11 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonFirst.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, "https://es.wikipedia.org/wiki/Hola_mundo".toUri())
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {

@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="wiki_background">#F6F6F6</color>
+    <color name="wiki_text">#202122</color>
+    <color name="wiki_blue">#3366CC</color>
+    <color name="wiki_separator">#A2A9B1</color>
+    <color name="wiki_link">#0645AD</color>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.tictactoe.AndroidTicTacToeActivity">
+    <!-- Visible como ícono en la barra (no escondido en el ⋮) -->
+    <item
+        android:id="@+id/new_game"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/new_game"
+        app:showAsAction="ifRoom" />
+</menu>

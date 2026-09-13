@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Tic-Tac-Toe</string>
+
+    <!-- Vs Android (mensajes del enunciado) -->
+    <string name="first_human">You go first.</string>
+    <string name="first_computer">Android goes first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Android\'s turn.</string>
+    <string name="result_tie">It\'s a tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Android won!</string>
+
+    <!-- 2 jugadores -->
+    <string name="first_player">%1$s goes first.</string>
+    <string name="turn_player">%1$s\'s turn.</string>
+    <string name="result_player_wins">%1$s won!</string>
+
+    <string name="new_game">New Game</string>
+
+    <string name="mode_vs_android">vs Android</string>
+    <string name="mode_two_players">2 Players</string>
+
+    <string name="player_you">You</string>
+    <string name="player_android">Android</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+
+    <string name="player_label" translatable="false">%1$s · %2$s</string>
+    <string name="score_player" translatable="false">%1$s: %2$d</string>
+    <string name="score_ties">Ties: %1$d</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Triqui Android</string>
+
+    <!-- Vs Android (mensajes del enunciado) -->
+    <string name="first_human">Empiezas tú.</string>
+    <string name="first_computer">Empieza Android.</string>
+    <string name="turn_human">Tu turno.</string>
+    <string name="turn_computer">Turno de Android.</string>
+    <string name="result_tie">¡Empate!</string>
+    <string name="result_human_wins">¡Ganaste!</string>
+    <string name="result_computer_wins">¡Ganó Android!</string>
+
+    <!-- 2 jugadores -->
+    <string name="first_player">Empieza %1$s.</string>
+    <string name="turn_player">Turno de %1$s.</string>
+    <string name="result_player_wins">¡Ganó %1$s!</string>
+
+    <string name="new_game">Nuevo juego</string>
+
+    <string name="mode_vs_android">vs Android</string>
+    <string name="mode_two_players">2 jugadores</string>
+
+    <string name="player_you">Tú</string>
+    <string name="player_android">Android</string>
+    <string name="player_1">Jugador 1</string>
+    <string name="player_2">Jugador 2</string>
+
+    <string name="score_ties">Empates: %1$d</string>
+</resources>

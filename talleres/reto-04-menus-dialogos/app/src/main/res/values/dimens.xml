@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="board_cell_size">100dp</dimen>
+    <dimen name="board_cell_margin">4dp</dimen>
+    <dimen name="board_text_size">64sp</dimen>
+    <dimen name="info_text_size">20sp</dimen>
+    <dimen name="score_text_size">16sp</dimen>
+    <dimen name="turn_text_size">18sp</dimen>
+    <dimen name="about_icon_size">72dp</dimen>
+</resources>

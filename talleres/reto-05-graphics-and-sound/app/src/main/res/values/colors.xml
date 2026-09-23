@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color.rgb(0, 200, 0) y Color.rgb(200, 0, 0) del enunciado -->
+    <color name="human_player">#FF00C800</color>
+    <color name="computer_player">#FFC80000</color>
+</resources>

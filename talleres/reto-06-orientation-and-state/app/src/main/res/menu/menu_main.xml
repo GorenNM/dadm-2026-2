@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.tictactoeorientation.AndroidTicTacToeActivity">
+    <!-- Visible como ícono en la barra (no escondido en el ⋮) -->
+    <item
+        android:id="@+id/new_game"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/new_game"
+        app:showAsAction="ifRoom" />
+    <!-- Difficulty, Reset Scores, Sound, Theme y About: en el ⋮, son acciones poco frecuentes.
+         Quit se sacó (enunciado del reto 06): para salir está el botón Back. -->
+    <item
+        android:id="@+id/ai_difficulty"
+        android:icon="@drawable/ic_difficulty"
+        android:title="@string/menu_difficulty"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reset_scores"
+        android:icon="@drawable/ic_reset_scores"
+        android:title="@string/menu_reset_scores"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/toggle_sound"
+        android:icon="@drawable/ic_sound_on"
+        android:title="@string/menu_sound_on"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/choose_theme"
+        android:icon="@drawable/ic_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

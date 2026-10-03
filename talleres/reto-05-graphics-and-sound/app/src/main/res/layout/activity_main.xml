@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AndroidTicTacToeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scroll para pantallas bajas; en un teléfono normal cabe todo sin desplazar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Modo de juego -->
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/mode_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:checkedButton="@id/mode_vs_android"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/mode_vs_android"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mode_vs_android" />
+
+                <Button
+                    android:id="@+id/mode_two_players"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mode_two_players" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <!-- Indicador de turno: se resalta el jugador que tiene que mover -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/turn_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_turn_active"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp"
+                    android:textColor="@color/human_player"
+                    android:textSize="@dimen/turn_text_size"
+                    android:textStyle="bold"
+                    tools:text="X · You" />
+
+                <TextView
+                    android:id="@+id/turn_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_turn_inactive"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp"
+                    android:textColor="@color/computer_player"
+                    android:textSize="@dimen/turn_text_size"
+                    android:textStyle="bold"
+                    tools:text="O · Android" />
+            </LinearLayout>
+
+            <co.edu.unal.tictactoegraphics.BoardView
+                android:id="@+id/board"
+                android:layout_width="@dimen/board_size"
+                android:layout_height="@dimen/board_size"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_board"
+                android:padding="12dp"
+                android:contentDescription="@string/board_description" />
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/info_text_size"
+                tools:text="@string/first_human" />
+
+            <Button
+                android:id="@+id/new_game_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/new_game"
+                app:icon="@drawable/ic_refresh" />
+
+            <!-- Extra Challenge: marcador con RelativeLayout -->
+            <RelativeLayout
+                android:id="@+id/scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="24dp">
+
+                <TextView
+                    android:id="@+id/tie_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="8dp"
+                    android:textSize="@dimen/score_text_size"
+                    tools:text="Ties: 0" />
+
+                <TextView
+                    android:id="@+id/human_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/tie_score"
+                    android:textSize="@dimen/score_text_size"
+                    tools:text="You: 0" />
+
+                <TextView
+                    android:id="@+id/computer_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/tie_score"
+                    android:gravity="end"
+                    android:textSize="@dimen/score_text_size"
+                    tools:text="Android: 0" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

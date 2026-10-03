@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.tictactoemenu.AndroidTicTacToeActivity">
+    <!-- Visible como ícono en la barra (no escondido en el ⋮) -->
+    <item
+        android:id="@+id/new_game"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/new_game"
+        app:showAsAction="ifRoom" />
+    <!-- Difficulty, Quit y About: en el ⋮, son configuraciones poco frecuentes -->
+    <item
+        android:id="@+id/ai_difficulty"
+        android:icon="@drawable/ic_difficulty"
+        android:title="@string/menu_difficulty"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/quit"
+        android:icon="@drawable/ic_quit"
+        android:title="@string/menu_quit"
+        app:showAsAction="never" />
+</menu>

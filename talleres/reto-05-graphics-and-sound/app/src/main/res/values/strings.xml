@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Tic-Tac-Toe</string>
+
+    <!-- Vs Android (mensajes del enunciado) -->
+    <string name="first_human">You go first.</string>
+    <string name="first_computer">Android goes first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Android\'s turn.</string>
+    <string name="result_tie">It\'s a tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Android won!</string>
+
+    <!-- 2 jugadores -->
+    <string name="first_player">%1$s goes first.</string>
+    <string name="turn_player">%1$s\'s turn.</string>
+    <string name="result_player_wins">%1$s won!</string>
+
+    <string name="new_game">New Game</string>
+
+    <string name="mode_vs_android">vs Android</string>
+    <string name="mode_two_players">2 Players</string>
+
+    <string name="player_you">You</string>
+    <string name="player_android">Android</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+
+    <string name="player_label" translatable="false">%1$s · %2$s</string>
+    <string name="score_player" translatable="false">%1$s: %2$d</string>
+    <string name="score_ties">Ties: %1$d</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_difficulty">Difficulty</string>
+    <string name="menu_sound_on">Sound: on</string>
+    <string name="menu_sound_off">Sound: off</string>
+    <string name="menu_theme">Theme</string>
+    <string name="menu_quit">Quit</string>
+    <string name="menu_about">About</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Choose theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+
+    <string name="board_description">Tic-tac-toe board</string>
+
+    <!-- Diálogo de dificultad -->
+    <string name="difficulty_choose">Choose difficulty</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_harder">Harder</string>
+    <string name="difficulty_expert">Expert</string>
+
+    <!-- Diálogo de salir -->
+    <string name="quit_question">Are you sure you want to quit?</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_app_description">A tic-tac-toe game against Android or between two players, made for the Mobile App Development course.</string>
+    <string name="about_author" translatable="false">Made by Fabio Murcia</string>
+    <string name="about_course" translatable="false">DADM 2026-2 — Universidad Nacional de Colombia</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Triqui Android</string>
+
+    <!-- Vs Android (mensajes del enunciado) -->
+    <string name="first_human">Empiezas tú.</string>
+    <string name="first_computer">Empieza Android.</string>
+    <string name="turn_human">Tu turno.</string>
+    <string name="turn_computer">Turno de Android.</string>
+    <string name="result_tie">¡Empate!</string>
+    <string name="result_human_wins">¡Ganaste!</string>
+    <string name="result_computer_wins">¡Ganó Android!</string>
+
+    <!-- 2 jugadores -->
+    <string name="first_player">Empieza %1$s.</string>
+    <string name="turn_player">Turno de %1$s.</string>
+    <string name="result_player_wins">¡Ganó %1$s!</string>
+
+    <string name="new_game">Nuevo juego</string>
+
+    <string name="mode_vs_android">vs Android</string>
+    <string name="mode_two_players">2 jugadores</string>
+
+    <string name="player_you">Tú</string>
+    <string name="player_android">Android</string>
+    <string name="player_1">Jugador 1</string>
+    <string name="player_2">Jugador 2</string>
+
+    <string name="score_ties">Empates: %1$d</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_difficulty">Dificultad</string>
+    <string name="menu_sound_on">Sonido: activado</string>
+    <string name="menu_sound_off">Sonido: desactivado</string>
+    <string name="menu_theme">Tema</string>
+    <string name="menu_quit">Salir</string>
+    <string name="menu_about">Acerca de</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Elegí el tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_system">Según el sistema</string>
+
+    <string name="board_description">Tablero del triqui</string>
+
+    <!-- Diálogo de dificultad -->
+    <string name="difficulty_choose">Elegí la dificultad</string>
+    <string name="difficulty_easy">Fácil</string>
+    <string name="difficulty_harder">Difícil</string>
+    <string name="difficulty_expert">Experto</string>
+
+    <!-- Diálogo de salir -->
+    <string name="quit_question">¿Seguro que querés salir?</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_app_description">Un juego de triqui contra Android o entre dos jugadores, hecho para la materia Desarrollo de Aplicaciones para Dispositivos Móviles.</string>
+</resources>

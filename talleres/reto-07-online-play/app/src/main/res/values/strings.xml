@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic-Tac-Toe R7</string>
+
+    <!-- Vs Android (mensajes del enunciado) -->
+    <string name="first_human">You go first.</string>
+    <string name="first_computer">Android goes first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Android\'s turn.</string>
+    <string name="result_tie">It\'s a tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Android won!</string>
+
+    <!-- 2 jugadores -->
+    <string name="first_player">%1$s goes first.</string>
+    <string name="turn_player">%1$s\'s turn.</string>
+    <string name="result_player_wins">%1$s won!</string>
+
+    <string name="new_game">New Game</string>
+
+    <string name="mode_vs_android">vs Android</string>
+    <string name="mode_two_players">2 Players</string>
+
+    <string name="player_you">You</string>
+    <string name="player_android">Android</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+
+    <string name="player_label" translatable="false">%1$s · %2$s</string>
+    <string name="score_player" translatable="false">%1$s: %2$d</string>
+    <string name="score_ties">Ties: %1$d</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_difficulty">Difficulty</string>
+    <string name="menu_sound_on">Sound: on</string>
+    <string name="menu_sound_off">Sound: off</string>
+    <string name="menu_theme">Theme</string>
+    <string name="menu_reset_scores">Reset Scores</string>
+    <string name="menu_about">About</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Choose theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+
+    <string name="board_description">Tic-tac-toe board</string>
+
+    <!-- Diálogo de dificultad -->
+    <string name="difficulty_choose">Choose difficulty</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_harder">Harder</string>
+    <string name="difficulty_expert">Expert</string>
+
+    <!-- Lista de juegos (pantalla inicial) -->
+    <string name="lobby_available_games">Available games</string>
+    <string name="lobby_empty">No one is waiting for a rival. Create a game and wait for someone to join.</string>
+    <string name="lobby_error">Could not connect to the server. Check your internet connection.</string>
+    <string name="lobby_retry">Retry</string>
+    <string name="lobby_create_game">Create game</string>
+    <string name="lobby_play_offline">Play offline</string>
+    <string name="lobby_join">Join</string>
+    <string name="lobby_waiting_for_rival">Waiting for a rival</string>
+    <string name="lobby_game_title">%1$s\'s game</string>
+    <string name="lobby_nickname">Your name: %1$s</string>
+    <string name="lobby_no_nickname">Choose your name</string>
+    <string name="lobby_game_taken">Someone else joined that game first.</string>
+    <string name="online_failed">Could not reach the server. Try again.</string>
+
+    <string name="menu_nickname">Change name</string>
+    <string name="nickname_title">Your name</string>
+    <string name="nickname_message">Other players see it in the list of games.</string>
+    <string name="nickname_hint">Name</string>
+
+    <!-- Partida en línea -->
+    <string name="online_connecting">Connecting…</string>
+    <string name="online_waiting">Waiting for someone to join your game…</string>
+    <string name="online_your_turn">Your turn.</string>
+    <string name="online_rival_turn">%1$s\'s turn.</string>
+    <string name="online_you_won">You won!</string>
+    <string name="online_rival_won">%1$s won!</string>
+    <string name="online_rival_left">%1$s left the game.</string>
+    <string name="online_rival_offline">Your rival lost the connection. Wait for them to come back, or leave.</string>
+    <string name="online_player_you">%1$s (you)</string>
+    <string name="online_rival_placeholder">Rival</string>
+    <string name="online_rematch">Rematch</string>
+    <string name="online_leave">Leave</string>
+    <string name="online_leave_title">Leave the game?</string>
+    <string name="online_leave_message">The game will end and your rival will see that you left.</string>
+    <string name="online_game_gone">That game no longer exists.</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Challenge %1$d · v%2$s</string>
+    <string name="about_app_description">A tic-tac-toe game to play online with someone on another phone, against Android, or between two players on the same phone. Made for the Mobile App Development course.</string>
+    <string name="about_author" translatable="false">Made by Fabio Murcia</string>
+    <string name="about_course" translatable="false">DADM 2026-2 — Universidad Nacional de Colombia</string>
+</resources>

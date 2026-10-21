@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Todo en el ⋮ y sin submenús (restricción del profesor): crear/unirse ya están en la pantalla -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.tictactoeonline.online.LobbyActivity">
+    <item
+        android:id="@+id/change_nickname"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/menu_nickname"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/choose_theme"
+        android:icon="@drawable/ic_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

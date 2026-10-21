@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Landscape: tablero a la izquierda, lo demás a la derecha (como el modo sin conexión).
+     Mismos ids y tipos de vista que layout/activity_online_game.xml. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".online.OnlineGameActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <!-- Alto match_parent: BoardView queda cuadrado con el menor entre board_size y el alto disponible -->
+        <co.edu.unal.tictactoeonline.BoardView
+            android:id="@+id/board"
+            android:layout_width="@dimen/board_size"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_board"
+            android:padding="12dp"
+            android:contentDescription="@string/board_description" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/turn_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_turn_active"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="6dp"
+                        android:textColor="@color/human_player"
+                        android:textSize="@dimen/turn_text_size"
+                        android:textStyle="bold"
+                        tools:text="X · Fabio (you)" />
+
+                    <TextView
+                        android:id="@+id/turn_o"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_turn_inactive"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="6dp"
+                        android:textColor="@color/computer_player"
+                        android:textSize="@dimen/turn_text_size"
+                        android:textStyle="bold"
+                        tools:text="O · Jorge" />
+                </LinearLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:indeterminate="true" />
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/info_text_size"
+                    tools:text="@string/online_your_turn" />
+
+                <TextView
+                    android:id="@+id/rival_offline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/online_rival_offline"
+                    android:textColor="?attr/colorError"
+                    android:textSize="@dimen/score_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/scores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:paddingHorizontal="24dp">
+
+                    <TextView
+                        android:id="@+id/tie_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:textSize="@dimen/score_text_size"
+                        tools:text="Ties: 0" />
+
+                    <TextView
+                        android:id="@+id/x_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/tie_score"
+                        android:textSize="@dimen/score_text_size"
+                        tools:text="Fabio: 0" />
+
+                    <TextView
+                        android:id="@+id/o_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/tie_score"
+                        android:gravity="end"
+                        android:textSize="@dimen/score_text_size"
+                        tools:text="Jorge: 0" />
+                </RelativeLayout>
+
+                <!-- Botones Material de la pantalla, no la barra de botones de un diálogo -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    tools:ignore="ButtonStyle">
+
+                    <Button
+                        android:id="@+id/rematch_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/online_rematch"
+                        app:icon="@drawable/ic_refresh" />
+
+                    <Button
+                        android:id="@+id/leave_button"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/online_leave"
+                        app:icon="@drawable/ic_exit" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

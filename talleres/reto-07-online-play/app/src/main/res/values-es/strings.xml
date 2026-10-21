@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Triqui R7</string>
+
+    <!-- Vs Android (mensajes del enunciado) -->
+    <string name="first_human">Empiezas tú.</string>
+    <string name="first_computer">Empieza Android.</string>
+    <string name="turn_human">Tu turno.</string>
+    <string name="turn_computer">Turno de Android.</string>
+    <string name="result_tie">¡Empate!</string>
+    <string name="result_human_wins">¡Ganaste!</string>
+    <string name="result_computer_wins">¡Ganó Android!</string>
+
+    <!-- 2 jugadores -->
+    <string name="first_player">Empieza %1$s.</string>
+    <string name="turn_player">Turno de %1$s.</string>
+    <string name="result_player_wins">¡Ganó %1$s!</string>
+
+    <string name="new_game">Nuevo juego</string>
+
+    <string name="mode_vs_android">vs Android</string>
+    <string name="mode_two_players">2 jugadores</string>
+
+    <string name="player_you">Tú</string>
+    <string name="player_android">Android</string>
+    <string name="player_1">Jugador 1</string>
+    <string name="player_2">Jugador 2</string>
+
+    <string name="score_ties">Empates: %1$d</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_difficulty">Dificultad</string>
+    <string name="menu_sound_on">Sonido: activado</string>
+    <string name="menu_sound_off">Sonido: desactivado</string>
+    <string name="menu_theme">Tema</string>
+    <string name="menu_reset_scores">Reiniciar marcador</string>
+    <string name="menu_about">Acerca de</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Elegí el tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_system">Según el sistema</string>
+
+    <string name="board_description">Tablero del triqui</string>
+
+    <!-- Diálogo de dificultad -->
+    <string name="difficulty_choose">Elegí la dificultad</string>
+    <string name="difficulty_easy">Fácil</string>
+    <string name="difficulty_harder">Difícil</string>
+    <string name="difficulty_expert">Experto</string>
+
+    <!-- Lista de juegos (pantalla inicial) -->
+    <string name="lobby_available_games">Juegos disponibles</string>
+    <string name="lobby_empty">Nadie está esperando rival. Crea un juego y espera a que alguien se una.</string>
+    <string name="lobby_error">No se pudo conectar con el servidor. Revisa tu conexión a internet.</string>
+    <string name="lobby_retry">Reintentar</string>
+    <string name="lobby_create_game">Crear juego</string>
+    <string name="lobby_play_offline">Jugar sin conexión</string>
+    <string name="lobby_join">Unirse</string>
+    <string name="lobby_waiting_for_rival">Esperando rival</string>
+    <string name="lobby_game_title">Juego de %1$s</string>
+    <string name="lobby_nickname">Tu apodo: %1$s</string>
+    <string name="lobby_no_nickname">Elige tu apodo</string>
+    <string name="lobby_game_taken">Alguien más se unió primero a ese juego.</string>
+    <string name="online_failed">No se pudo contactar al servidor. Intenta de nuevo.</string>
+
+    <string name="menu_nickname">Cambiar apodo</string>
+    <string name="nickname_title">Tu apodo</string>
+    <string name="nickname_message">Los demás lo ven en la lista de juegos.</string>
+    <string name="nickname_hint">Apodo</string>
+
+    <!-- Partida en línea -->
+    <string name="online_connecting">Conectando…</string>
+    <string name="online_waiting">Esperando a que alguien se una a tu juego…</string>
+    <string name="online_your_turn">Tu turno.</string>
+    <string name="online_rival_turn">Turno de %1$s.</string>
+    <string name="online_you_won">¡Ganaste!</string>
+    <string name="online_rival_won">¡Ganó %1$s!</string>
+    <string name="online_rival_left">%1$s abandonó la partida.</string>
+    <string name="online_rival_offline">Tu rival perdió la conexión. Espera a que vuelva, o sal.</string>
+    <string name="online_player_you">%1$s (tú)</string>
+    <string name="online_rival_placeholder">Rival</string>
+    <string name="online_rematch">Revancha</string>
+    <string name="online_leave">Salir</string>
+    <string name="online_leave_title">¿Salir de la partida?</string>
+    <string name="online_leave_message">La partida termina y tu rival verá que te fuiste.</string>
+    <string name="online_game_gone">Ese juego ya no existe.</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Reto %1$d · v%2$s</string>
+    <string name="about_app_description">Un juego de triqui para jugar en línea con alguien en otro teléfono, contra Android o entre dos jugadores en el mismo teléfono. Hecho para la materia Desarrollo de Aplicaciones para Dispositivos Móviles.</string>
+</resources>

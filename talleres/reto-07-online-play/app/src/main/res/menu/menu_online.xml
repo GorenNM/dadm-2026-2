@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.tictactoeonline.online.OnlineGameActivity">
+    <!-- Salir siempre a mano en la barra: durante la partida el botón de la pantalla no se muestra -->
+    <item
+        android:id="@+id/leave"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/online_leave"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/toggle_sound"
+        android:icon="@drawable/ic_sound_on"
+        android:title="@string/menu_sound_on"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,34 @@
+{
+  "rules": {
+    "games": {
+      ".read": "auth != null",
+      ".indexOn": ["status"],
+      "$gameId": {
+        ".write": "auth != null && ((!data.exists() && newData.child('xUid').val() === auth.uid) || data.child('xUid').val() === auth.uid || data.child('oUid').val() === auth.uid || (data.child('status').val() === 'waiting' && !data.child('oUid').exists() && newData.child('oUid').val() === auth.uid))",
+        ".validate": "newData.hasChildren(['status', 'xUid', 'board', 'turn'])",
+        "status": {
+          ".validate": "newData.val() === 'waiting' || newData.val() === 'playing' || newData.val() === 'finished' || newData.val() === 'abandoned'"
+        },
+        "xUid": {
+          ".validate": "!data.exists() || newData.val() === data.val()"
+        },
+        "oUid": {
+          ".validate": "!data.exists() || newData.val() === data.val()"
+        },
+        "xName": { ".validate": "newData.isString() && newData.val().length <= 20" },
+        "oName": { ".validate": "newData.isString() && newData.val().length <= 20" },
+        "board": { ".validate": "newData.isString() && newData.val().matches(/^[XO-]{9}$/)" },
+        "turn": { ".validate": "newData.val() === 'X' || newData.val() === 'O'" },
+        "starter": { ".validate": "newData.val() === 'X' || newData.val() === 'O'" },
+        "winner": { ".validate": "newData.isNumber()" },
+        "xWins": { ".validate": "newData.isNumber()" },
+        "oWins": { ".validate": "newData.isNumber()" },
+        "ties": { ".validate": "newData.isNumber()" },
+        "xOnline": { ".validate": "newData.isBoolean()" },
+        "oOnline": { ".validate": "newData.isBoolean()" },
+        "createdAt": { ".validate": "newData.isNumber()" },
+        "$other": { ".validate": false }
+      }
+    }
+  }
+}

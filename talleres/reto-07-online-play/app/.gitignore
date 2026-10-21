@@ -1,0 +1,3 @@
+/build
+# Config de Firebase: trae la API key y cada uno usa su propio proyecto (ver README)
+google-services.json

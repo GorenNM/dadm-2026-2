@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Todo en el ⋮ y sin submenús (restricción del profesor) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.aichat.ui.ChatActivity">
+    <item
+        android:id="@+id/new_conversation"
+        android:icon="@drawable/ic_new_chat"
+        android:title="@string/menu_new_conversation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/choose_theme"
+        android:icon="@drawable/ic_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

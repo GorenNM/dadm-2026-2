@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Única pantalla: la conversación, el aviso de error con "Reintentar" y el campo de texto.
+     CoordinatorLayout para que el Snackbar de "copiado" se ancle sobre el campo de texto. -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="@string/app_name" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="@dimen/screen_margin"
+                android:paddingVertical="8dp"
+                tools:listitem="@layout/item_message_model" />
+
+            <!-- Conversación vacía: invitación y prompts sugeridos (o el aviso de que falta configurar Firebase) -->
+            <LinearLayout
+                android:id="@+id/empty_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/screen_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/empty_title"
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+
+                <TextView
+                    android:id="@+id/not_configured_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/not_configured"
+                    android:textAppearance="?attr/textAppearanceBodyLarge"
+                    android:textColor="?attr/colorError" />
+
+                <LinearLayout
+                    android:id="@+id/suggestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/empty_hint"
+                        android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_suggestion_1"
+                            style="@style/Widget.Material3.Chip.Suggestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/suggestion_1" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_suggestion_2"
+                            style="@style/Widget.Material3.Chip.Suggestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/suggestion_2" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_suggestion_3"
+                            style="@style/Widget.Material3.Chip.Suggestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/suggestion_3" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_suggestion_4"
+                            style="@style/Widget.Material3.Chip.Suggestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/suggestion_4" />
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Último envío fallido -->
+        <LinearLayout
+            android:id="@+id/error_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorErrorContainer"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/screen_margin"
+            android:paddingEnd="8dp"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/error_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="?attr/colorOnErrorContainer"
+                tools:text="@string/error_network" />
+
+            <Button
+                android:id="@+id/retry_button"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_retry"
+                android:textColor="?attr/colorOnErrorContainer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/input_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/input_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLines="5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Enviar; mientras el modelo responde pasa a Detener -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_button"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/action_send"
+                app:icon="@drawable/ic_send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

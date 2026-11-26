@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ícono del reto 11: una burbuja de chat con un destello (la IA) como hueco (evenOdd).
+  Todo dentro de la zona segura del ícono adaptativo (21,21)-(87,87), centrado en (54,54).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M30,32h48a4,4 0 0 1 4,4v28a4,4 0 0 1 -4,4H52L38,80V68h-8a4,4 0 0 1 -4,-4V36a4,4 0 0 1 4,-4z M54,41C55,48 58,51 65,52C58,53 55,56 54,63C53,56 50,53 43,52C50,51 53,48 54,41z" />
+</vector>

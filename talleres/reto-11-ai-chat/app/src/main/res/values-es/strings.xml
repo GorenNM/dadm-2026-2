@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chat IA R11</string>
+
+    <!-- Conversación -->
+    <string name="input_hint">Mensaje</string>
+    <string name="action_send">Enviar</string>
+    <string name="action_stop">Detener</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="message_thinking">Pensando…</string>
+    <string name="message_stopped">(detenido)</string>
+    <string name="message_interrupted">(interrumpido)</string>
+    <string name="message_copied">Mensaje copiado.</string>
+
+    <!-- Conversación vacía y prompts sugeridos -->
+    <string name="empty_title">Pregúntale lo que quieras a la IA</string>
+    <string name="empty_hint">Escribe un mensaje abajo o prueba uno de estos:</string>
+    <string name="suggestion_1">Explícame qué es MVVM en Android</string>
+    <string name="suggestion_2">Dame ideas para una app móvil</string>
+    <string name="suggestion_3">Resume en 3 viñetas qué es Firebase</string>
+    <string name="suggestion_4">Escribe un haiku sobre programar de noche</string>
+    <string name="not_configured">Falta configurar Firebase: agrega app/google-services.json (mira el README) y abre la app otra vez.</string>
+
+    <!-- Errores -->
+    <string name="error_network">No hay conexión, o la petición tardó demasiado. Revisa tu internet e intenta de nuevo.</string>
+    <string name="error_quota">Se alcanzó el límite de uso gratuito del modelo. Espera un momento e intenta de nuevo.</string>
+    <string name="error_configuration">El proyecto de Firebase no está bien configurado: puede que la API de Gemini esté deshabilitada o que la clave fuera rechazada. Mira el README.</string>
+    <string name="error_blocked">El modelo no respondió porque el filtro de seguridad bloqueó el mensaje o la respuesta. Prueba con otras palabras.</string>
+    <string name="error_app_check">Esta app no pasó la verificación de App Check. Si es un build de depuración, registra su token (mira el README).</string>
+    <string name="error_location">El modelo no está disponible en tu región.</string>
+    <string name="error_interrupted">La respuesta se cortó cuando se cerró la app.</string>
+    <string name="error_unknown">Algo salió mal y no hay respuesta. Intenta de nuevo.</string>
+
+    <!-- Nueva conversación -->
+    <string name="new_conversation_title">¿Empezar una conversación nueva?</string>
+    <string name="new_conversation_message">Se borrará la conversación actual.</string>
+    <string name="new_conversation_confirm">Empezar</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_new_conversation">Nueva conversación</string>
+    <string name="menu_theme">Tema</string>
+    <string name="menu_about">Acerca de</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Elige el tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_system">Según el sistema</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Reto %1$d · v%2$s</string>
+    <string name="about_app_description">Un chatbot que conversa con el modelo de IA generativa Gemini a través de Firebase AI Logic. Hecho para el curso de Desarrollo de Aplicaciones para Dispositivos Móviles.</string>
+</resources>

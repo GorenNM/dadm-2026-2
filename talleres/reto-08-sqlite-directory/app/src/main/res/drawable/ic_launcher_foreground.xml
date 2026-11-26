@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ícono del reto 08: dos edificios (un directorio de empresas). Ventanas y
+  puerta son huecos (evenOdd). Todo dentro de la zona segura del ícono
+  adaptativo (21,21)-(87,87), centrado en (54,54).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M34,30h22v48h-22z M39,36h5v5h-5z M46,36h5v5h-5z M39,45h5v5h-5z M46,45h5v5h-5z M39,54h5v5h-5z M46,54h5v5h-5z M42,68h6v10h-6z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M58,46h16v32h-16z M62,51h4v4h-4z M68,51h4v4h-4z M62,59h4v4h-4z M68,59h4v4h-4z M62,67h4v4h-4z M68,67h4v4h-4z" />
+</vector>

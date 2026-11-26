@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Directory R8</string>
+
+    <!-- Clasificaciones del enunciado -->
+    <string name="classification_consulting">Consulting</string>
+    <string name="classification_custom_development">Custom development</string>
+    <string name="classification_software_factory">Software factory</string>
+
+    <!-- Lista (pantalla inicial) -->
+    <string name="list_search_hint">Search by name</string>
+    <string name="list_add">New company</string>
+    <string name="list_empty">There are no companies yet. Add the first one with \"New company\".</string>
+    <string name="list_no_results">No company matches the search or the filters.</string>
+    <string name="list_clear_filters">Clear filters</string>
+    <string name="list_contact_separator" translatable="false">" · "</string>
+    <plurals name="list_count">
+        <item quantity="one">%d company</item>
+        <item quantity="other">%d companies</item>
+    </plurals>
+    <string name="list_created">Company added.</string>
+    <string name="list_updated">Changes saved.</string>
+    <string name="list_deleted">Company deleted.</string>
+
+    <!-- Formulario -->
+    <string name="form_title_new">New company</string>
+    <string name="form_title_edit">Company</string>
+    <string name="form_name">Company name *</string>
+    <string name="form_classifications">Classification *</string>
+    <string name="form_website">Website</string>
+    <string name="form_website_placeholder" translatable="false">https://</string>
+    <string name="form_phone">Phone</string>
+    <string name="form_email">Email</string>
+    <string name="form_products">Products and services</string>
+    <string name="form_required_note">* Required. Website, phone and email are optional, but they must be valid if you fill them in.</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_open_website">Open website</string>
+    <string name="action_call">Call</string>
+    <string name="action_send_email">Send email</string>
+
+    <string name="error_name_required">Enter the company name.</string>
+    <string name="error_name_too_long">At most 100 characters.</string>
+    <string name="error_name_duplicate">There is already a company with this name.</string>
+    <string name="error_classifications_required">Choose at least one classification.</string>
+    <string name="error_website_invalid">Enter a valid web address, like example.com.</string>
+    <string name="error_phone_invalid">Enter a valid phone number (7 to 15 digits).</string>
+    <string name="error_email_invalid">Enter a valid email, like name@example.com.</string>
+
+    <string name="delete_title">Delete company?</string>
+    <string name="delete_message">\"%1$s\" will be removed from the directory. This cannot be undone.</string>
+    <string name="discard_title">Discard changes?</string>
+    <string name="discard_message">The changes you made to this company have not been saved.</string>
+    <string name="discard_confirm">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+
+    <string name="company_not_found">That company no longer exists.</string>
+    <string name="save_failed">The company could not be saved. Try again.</string>
+    <string name="no_app_for_action">There is no app on this phone to do that.</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_theme">Theme</string>
+    <string name="menu_about">About</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Choose theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Challenge %1$d · v%2$s</string>
+    <string name="about_app_description">A directory of software development companies, stored on the phone with SQLite. Made for the Mobile App Development course.</string>
+    <string name="about_author" translatable="false">Made by Fabio Murcia</string>
+    <string name="about_course" translatable="false">DADM 2026-2 — Universidad Nacional de Colombia</string>
+</resources>

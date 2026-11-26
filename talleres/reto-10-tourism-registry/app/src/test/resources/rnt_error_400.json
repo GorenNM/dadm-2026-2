@@ -1,0 +1,8 @@
+{
+  "code" : "query.compiler.malformed",
+  "error" : true,
+  "message" : "Could not parse SoQL query \"select * where foo='\": Unexpected end of input:\nselect * where foo='\n                    ^",
+  "data" : {
+    "query" : "select * where foo='"
+  }
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turismo R10</string>
+
+    <!-- Búsqueda: filtros -->
+    <string name="filter_name_hint">El nombre contiene</string>
+    <string name="filter_department">Departamento</string>
+    <string name="filter_municipality">Municipio</string>
+    <string name="filter_municipality_helper">Elige primero un departamento</string>
+    <string name="filter_category">Categoría</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_options_error">No se pudieron cargar las opciones. %1$s</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_clear_filters">Limpiar filtros</string>
+    <string name="action_load_more">Cargar más</string>
+
+    <!-- Búsqueda: resultados y estados -->
+    <string name="search_idle">Elige los filtros que quieras y toca Buscar. Todos son opcionales.</string>
+    <string name="search_empty">Ningún prestador coincide con esos filtros.</string>
+    <plurals name="results_count">
+        <item quantity="one">%1$s prestador</item>
+        <item quantity="many">%1$s prestadores</item>
+        <item quantity="other">%1$s prestadores</item>
+    </plurals>
+    <string name="results_showing">Mostrando %1$s de %2$s</string>
+    <string name="query_show">Mostrar consulta enviada</string>
+    <string name="query_hide">Ocultar consulta enviada</string>
+
+    <!-- Errores del servicio -->
+    <string name="error_no_connection">No hay conexión a internet. Conéctate e intenta de nuevo.</string>
+    <string name="error_timeout">El servicio tardó demasiado en responder.</string>
+    <string name="error_unknown_host">No se encontró el servidor de datos.gov.co. Revisa tu conexión.</string>
+    <string name="error_network">Un error de red interrumpió la consulta.</string>
+    <string name="error_server">El servicio respondió con un error (HTTP %1$d).</string>
+    <string name="error_server_with_message">El servicio respondió con un error (HTTP %1$d): %2$s</string>
+    <string name="error_invalid_response">El servicio respondió con datos en un formato inesperado.</string>
+
+    <!-- Detalle -->
+    <string name="detail_title">Prestador</string>
+    <string name="detail_not_found">Ese prestador ya no está en el registro.</string>
+    <string name="detail_category">Categoría</string>
+    <string name="detail_sub_category">Subcategoría</string>
+    <string name="detail_provider_type">Tipo de prestador</string>
+    <string name="detail_address">Dirección</string>
+    <string name="detail_municipality">Municipio</string>
+    <string name="detail_department">Departamento</string>
+    <string name="detail_phone">Teléfono</string>
+    <string name="detail_mobile">Celular</string>
+    <string name="detail_rooms">Habitaciones</string>
+    <string name="detail_beds">Camas</string>
+    <string name="detail_employees">Empleados</string>
+    <string name="detail_code">Código RNT</string>
+    <string name="action_call">Llamar</string>
+    <string name="action_map">Ver en el mapa</string>
+    <string name="no_app_for_action">No hay ninguna app en el teléfono para hacer eso.</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_theme">Tema</string>
+    <string name="menu_about">Acerca de</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Elige el tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_system">Según el sistema</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Reto %1$d · v%2$s</string>
+    <string name="about_app_description">Una herramienta para buscar en el Registro Nacional de Turismo (datos.gov.co), consumido como servicio web. Hecho para el curso de Desarrollo de Aplicaciones para Dispositivos Móviles.</string>
+</resources>

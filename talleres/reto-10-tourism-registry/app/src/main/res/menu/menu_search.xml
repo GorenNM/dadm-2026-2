@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Todo en el ⋮ y sin submenús (restricción del profesor): buscar y filtrar ya están en la pantalla -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.edu.unal.tourismregistry.ui.search.SearchActivity">
+    <item
+        android:id="@+id/choose_theme"
+        android:icon="@drawable/ic_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

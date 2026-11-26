@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tourism R10</string>
+
+    <!-- Búsqueda: filtros -->
+    <string name="filter_name_hint">Name contains</string>
+    <string name="filter_department">Department</string>
+    <string name="filter_municipality">Municipality</string>
+    <string name="filter_municipality_helper">Choose a department first</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_all">All</string>
+    <string name="filter_options_error">Could not load the options. %1$s</string>
+    <string name="action_search">Search</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_clear_filters">Clear filters</string>
+    <string name="action_load_more">Load more</string>
+
+    <!-- Búsqueda: resultados y estados -->
+    <string name="search_idle">Choose the filters you want and tap Search. All of them are optional.</string>
+    <string name="search_empty">No provider matches those filters.</string>
+    <plurals name="results_count">
+        <item quantity="one">%1$s provider</item>
+        <item quantity="other">%1$s providers</item>
+    </plurals>
+    <string name="results_showing">Showing %1$s of %2$s</string>
+    <string name="query_show">Show request sent</string>
+    <string name="query_hide">Hide request sent</string>
+    <string name="list_separator" translatable="false">" · "</string>
+    <string name="place_separator" translatable="false">", "</string>
+
+    <!-- Errores del servicio -->
+    <string name="error_no_connection">There is no internet connection. Connect and try again.</string>
+    <string name="error_timeout">The service took too long to answer.</string>
+    <string name="error_unknown_host">Could not find the datos.gov.co server. Check your connection.</string>
+    <string name="error_network">A network error interrupted the request.</string>
+    <string name="error_server">The service answered with an error (HTTP %1$d).</string>
+    <string name="error_server_with_message">The service answered with an error (HTTP %1$d): %2$s</string>
+    <string name="error_invalid_response">The service answered with data in an unexpected format.</string>
+
+    <!-- Detalle -->
+    <string name="detail_title">Provider</string>
+    <string name="detail_not_found">That provider is no longer in the registry.</string>
+    <string name="detail_category">Category</string>
+    <string name="detail_sub_category">Subcategory</string>
+    <string name="detail_provider_type">Provider type</string>
+    <string name="detail_address">Address</string>
+    <string name="detail_municipality">Municipality</string>
+    <string name="detail_department">Department</string>
+    <string name="detail_phone">Phone</string>
+    <string name="detail_mobile">Mobile</string>
+    <string name="detail_rooms">Rooms</string>
+    <string name="detail_beds">Beds</string>
+    <string name="detail_employees">Employees</string>
+    <string name="detail_code">RNT code</string>
+    <string name="action_call">Call</string>
+    <string name="action_map">View on map</string>
+    <string name="no_app_for_action">There is no app on this phone to do that.</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_theme">Theme</string>
+    <string name="menu_about">About</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Choose theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Challenge %1$d · v%2$s</string>
+    <string name="about_app_description">A search tool for the National Tourism Registry (datos.gov.co), consumed as a web service. Made for the Mobile App Development course.</string>
+    <string name="about_author" translatable="false">Made by Fabio Murcia</string>
+    <string name="about_course" translatable="false">DADM 2026-2 — Universidad Nacional de Colombia</string>
+</resources>

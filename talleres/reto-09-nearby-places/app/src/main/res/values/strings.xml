@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nearby R9</string>
+
+    <!-- Categorías -->
+    <string name="category_hospitals">Hospitals and clinics</string>
+    <string name="category_pharmacies">Pharmacies</string>
+    <string name="category_tourism">Tourism</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_hotels">Hotels</string>
+    <string name="category_police">Police</string>
+
+    <!-- Mapa -->
+    <string name="map_attribution" translatable="false">© OpenStreetMap contributors</string>
+    <string name="map_my_location">My location</string>
+    <string name="map_center_title">Search center</string>
+    <string name="map_toolbar_subtitle">%1$s · %2$d km</string>
+    <string name="map_coordinates" translatable="false">%1$.4f, %2$.4f</string>
+    <string name="poi_snippet" translatable="false">%1$s · %2$s</string>
+    <string name="distance_meters" translatable="false">%d m</string>
+    <string name="distance_kilometers" translatable="false">%.1f km</string>
+
+    <!-- Estado de la búsqueda -->
+    <string name="status_permission_needed">To search where you are, allow access to your location. Meanwhile, long-press the map to search around any point.</string>
+    <string name="status_default_hint">Showing Universidad Nacional (Bogotá). Tap My location to search where you are.</string>
+    <string name="status_permission_allow">Allow location</string>
+    <string name="status_permission_settings">Open app settings</string>
+    <string name="status_locating">Finding your location…</string>
+    <string name="status_location_off">Location is turned off on this device. Turn it on, or long-press the map to search around any point.</string>
+    <string name="status_location_settings">Location settings</string>
+    <string name="status_location_failed">Couldn\'t get your location. Check the GPS signal, or long-press the map to search around any point.</string>
+    <string name="status_loading">Looking for places…</string>
+    <string name="status_no_categories">Choose at least one category.</string>
+    <plurals name="status_found">
+        <item quantity="one">%1$d place within %2$d km.</item>
+        <item quantity="other">%1$d places within %2$d km.</item>
+    </plurals>
+    <string name="status_truncated">Showing only the 50 nearest of: %1$s.</string>
+    <string name="status_empty">No places found within %1$d km. Try a bigger radius or other categories.</string>
+    <string name="status_network_error">Couldn\'t load the places. Check your internet connection.</string>
+    <string name="action_retry">Try again</string>
+    <string name="list_separator" translatable="false">", "</string>
+
+    <!-- Permiso -->
+    <string name="rationale_title">Location permission</string>
+    <string name="rationale_message">The app uses your location to center the map and find places around you. Only the coordinates of the search are sent to the Photon service.</string>
+    <string name="rationale_continue">Continue</string>
+    <string name="rationale_not_now">Not now</string>
+
+    <!-- Ajustes -->
+    <string name="settings_title">Search radius</string>
+    <string name="settings_radius_title">Search radius (km)</string>
+    <string name="settings_radius_summary">Places farther than this are not shown.</string>
+
+    <!-- Menú de opciones -->
+    <string name="menu_settings">Search radius</string>
+    <string name="menu_theme">Theme</string>
+    <string name="menu_about">About</string>
+
+    <!-- Diálogo de tema -->
+    <string name="theme_choose">Choose theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+
+    <!-- Diálogo Acerca de -->
+    <string name="about_version">Challenge %1$d · v%2$s</string>
+    <string name="about_app_description">Shows the places of interest near you on an OpenStreetMap map, within a radius you choose. Made for the Mobile App Development course.</string>
+    <string name="about_author" translatable="false">Made by Fabio Murcia</string>
+    <string name="about_course" translatable="false">DADM 2026-2 — Universidad Nacional de Colombia</string>
+</resources>

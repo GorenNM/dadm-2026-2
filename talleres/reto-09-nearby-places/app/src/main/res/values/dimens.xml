@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin">16dp</dimen>
+    <!-- Pin del mapa y la etiqueta con el nombre que va debajo -->
+    <dimen name="poi_pin_size">36dp</dimen>
+    <dimen name="poi_label_text_size">12sp</dimen>
+    <dimen name="poi_label_max_width">140dp</dimen>
+    <dimen name="center_marker_size">28dp</dimen>
+    <dimen name="frame_padding">48dp</dimen>
+    <dimen name="about_icon_size">72dp</dimen>
+    <dimen name="about_title_text_size">20sp</dimen>
+    <dimen name="about_body_text_size">16sp</dimen>
+    <dimen name="about_author_text_size">18sp</dimen>
+</resources>

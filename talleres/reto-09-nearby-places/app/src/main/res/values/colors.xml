@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Los tiles de OpenStreetMap son claros en cualquier tema: la atribución y las etiquetas no cambian de color -->
+    <color name="map_attribution_background">#B3FFFFFF</color>
+    <color name="map_attribution_text">#FF212121</color>
+    <color name="map_label_text">#FF212121</color>
+    <color name="map_label_halo">#FFFFFFFF</color>
+    <color name="map_center">#FF1E88E5</color>
+</resources>

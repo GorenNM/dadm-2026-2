@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- La key tiene que ser la misma de PreferencesRadiusSource.KEY, y min/max/default sus constantes -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SeekBarPreference
+        android:defaultValue="2"
+        android:key="radius_km"
+        android:max="20"
+        android:summary="@string/settings_radius_summary"
+        android:title="@string/settings_radius_title"
+        app:iconSpaceReserved="false"
+        app:min="1"
+        app:seekBarIncrement="1"
+        app:showSeekBarValue="true" />
+
+</PreferenceScreen>
